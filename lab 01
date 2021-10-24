@@ -1,0 +1,30 @@
+lab task 2:-
+from collections import deque
+balance = input("Enter expression to check:  ")
+stack = deque()
+for i in balance:
+  stack.append(i)
+if(stack.count('(')!=stack.count(')')):
+  print("brackets  not equal")
+else:
+  print("brackets  balanced")
+if(stack.count('{')!= stack.count('}')):
+  print("outer brackets are not equal")
+else:
+  print("outer brackets  equal")
+if(stack.count('[')!= stack.count(']')):
+  print("[] brackets are not equal")
+else:
+  print("[] brackets  equal")
+  
+  
+  
+  
+  lab task 1:-
+  name=input("enter : ")
+for i in range(len(name)):
+  if name[1]==name[-1-i]:
+    print(name,"is palindrome ")
+    break
+else:
+     print(name,'is not palindrome')
