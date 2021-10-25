@@ -1,0 +1,47 @@
+import numpy as np
+def _init_(self):
+
+  self.front=0
+  self.rear=0
+  self.num_elems=0
+
+def enqueue(self, element):
+  if self.is_full():
+
+    print("Queue is full")
+    return False
+else:
+  self.data[self.front]=element
+  self.front+=1
+  self.rear=(self.rear+1)%self.capacity
+
+  self.num_elems+=1
+  return True
+def dequeue(self):
+  if self.is_empty():
+  
+    return "Queue is empty"
+else:
+  self.data=np.delete(self.data, 0)
+  self.front=(self.front+1)%self.capacity
+  self.num_elems-=1
+# return data
+def is_full(self):
+  if self.num_elems == self.capacity :
+    return True
+    return False
+def is_empty(self):
+  if self.num_elems==0:
+    return True
+    return False
+def print_queue(self):
+  data_list=[]
+  if self.is_empty():
+    print(data_list)
+else:
+
+  print("[|", end="")
+for data in self.data:
+  if not np.isnan(data):
+  print(str(data)+"|", end="")
+  print("]"
